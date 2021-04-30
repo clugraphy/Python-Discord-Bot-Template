@@ -16,15 +16,15 @@ class general(commands.Cog, name="general"):
         Get some useful (or not) information about the bot.
         """
         embed = discord.Embed(
-            description="Used Krypton's template",
+            description="cLu designer Bot for HTF Fund",
             color=config.success
         )
         embed.set_author(
-            name="Bot Information"
+            name="HTF Bot Information"
         )
         embed.add_field(
             name="Owner:",
-            value="Krypton#2188",
+            value="cLuGraphy#7516",
             inline=True
         )
         embed.add_field(
