@@ -1,11 +1,8 @@
-import environ
-
-env = environ.Env(SECRET_KEY = str,)
-
+import os
 
 # Can be multiple prefixes, like this: ("!", "?")
 BOT_PREFIX = ("$htf " , "htf-")
-TOKEN = env('SECRET_TOKEN')
+TOKEN = os.environ['SECRET_TOKEN']
 APPLICATION_ID = "830748037290786867"
 OWNERS = [104005181103964160, 437404402781782028]
 BLACKLIST = []
