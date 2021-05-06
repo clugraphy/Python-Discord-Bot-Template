@@ -1,8 +1,12 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Can be multiple prefixes, like this: ("!", "?")
 BOT_PREFIX = ("$htf " , "htf-")
-TOKEN = os.environ['SECRET_TOKEN']
+TOKEN = os.getenv("SECRET_TOKEN")
 APPLICATION_ID = "830748037290786867"
 OWNERS = [104005181103964160, 437404402781782028]
 BLACKLIST = []
